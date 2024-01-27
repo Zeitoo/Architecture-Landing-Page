@@ -25,6 +25,7 @@
   --dark-grey: rgb(61, 52, 52);
   --ligth-grey: rgb(192, 192, 192);
   --lighter-grey: rgb(224, 224, 224);
+  --almost-black : rgb(27, 27, 27);
 }
 
 * {
@@ -372,3 +373,42 @@ textarea {
 .left {
   transform: translate(-825px , 0px);
 }
+
+
+/* footer part */
+
+
+
+footer {
+  color: white;
+  background-color: var(--almost-black);
+  display: grid;
+    grid-template-columns: 1fr 200px 1fr 1fr;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer p {
+  width: 150%;
+   margin: 40px 0px;
+  color: rgb(230, 230, 230);
+  font-size: 1em;
+}
+
+footer ul {
+  font-size: 0.9em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
+}
+
+.footer-logo {
+  width: 200px;
+}
+
+.social-icons li img {
+  width: 40px;
+}
+
