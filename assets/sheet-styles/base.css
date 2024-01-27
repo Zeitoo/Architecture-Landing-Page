@@ -17,7 +17,7 @@
 }
 
 :root {
-  --grey: grey;
+  --grey: rgb(128, 128, 128);
   --dark-grey: rgb(61, 52, 52);
 }
 
@@ -88,7 +88,7 @@ header {
 }
 
 .hero__caption {
-  margin-top: 100px;
+
   display: flex;
   flex-direction: column;
   align-items: space-between;
@@ -110,7 +110,6 @@ header {
   display: block;
   color: var(--dark-grey);
 }
-
 
 
 .vertical-text {
@@ -140,5 +139,73 @@ header {
 
 .image-banner p img {
   margin-left: 5px;
+  transform: translate(0px, 8px);
+}
+
+
+
+/*About section */ 
+
+main {
+  margin-top: 50px;
+  display: flex;
+    justify-content: center;
+}
+
+.About-section {
+  padding: 0px 20px;
+  padding-bottom: -50px;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+.image-gallery {
+  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+
+}
+
+.image-gallery * {
+  width: 200px;
+}
+
+.image-2 {
+  transform: translate(0px, 100px);
+}
+
+.text-conent-wrapper {
+  display: flex;
+  justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+  height: 310px;
+  width: 350px;
+  margin-bottom: 90px;
+}
+
+.text-conent-wrapper__title {
+  font-size: 2em;
+  font-weight: 100;
+  color: var(--grey);
+}
+
+.text-conent-wrapper__content {
+  line-height: 1.5em;
+  font-size: 0.88em;
+}
+
+.read-more-button {
+  font-size: 0.7em;
+  padding: 5px 10px 15px 10px;
+  display: inline-block;
+  background-color: white;
+}
+
+.read-more-button p img {
   transform: translate(0px, 8px);
 }
