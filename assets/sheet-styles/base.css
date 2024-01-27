@@ -1,0 +1,63 @@
+@font-face {
+    font-family: Helvetica;
+    src: url("../fonts/Helvetica-Font/helvetica-light-587ebe5a59211.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Helvetica;
+    src: url("../fonts/Helvetica-Font/Helvetica.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Helvetica;
+    src: url("../fonts/Helvetica-Font/Helvetica-Bold.ttf");
+    font-weight: 900;
+}
+
+* {
+    font-family: Helvetica;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+ 
+}
+
+.header {
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    padding: 0px 100px;
+    height: 75px;
+
+}
+
+.header__logo {
+    aspect-ratio: 2/1.7;
+    width: 75px;
+}
+
+.nav__wrapper {
+   
+}
+
+.header__nav__buttons {
+    display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+    /*missing clamp */
+    width: 600px;
+
+}
+
+.nav__item {
+    font-size: 0.8em;
+    list-style: none;
+}
