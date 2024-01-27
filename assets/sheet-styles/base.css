@@ -1,63 +1,144 @@
 @font-face {
-    font-family: Helvetica;
-    src: url("../fonts/Helvetica-Font/helvetica-light-587ebe5a59211.ttf");
-    font-weight: 300;
+  font-family: Helvetica;
+  src: url("../fonts/Helvetica-Font/helvetica-light-587ebe5a59211.ttf");
+  font-weight: 300;
 }
 
 @font-face {
-    font-family: Helvetica;
-    src: url("../fonts/Helvetica-Font/Helvetica.ttf");
-    font-weight: 500;
+  font-family: Helvetica;
+  src: url("../fonts/Helvetica-Font/Helvetica.ttf");
+  font-weight: 500;
 }
 
 @font-face {
-    font-family: Helvetica;
-    src: url("../fonts/Helvetica-Font/Helvetica-Bold.ttf");
-    font-weight: 900;
+  font-family: Helvetica;
+  src: url("../fonts/Helvetica-Font/Helvetica-Bold.ttf");
+  font-weight: 900;
+}
+
+:root {
+  --grey: grey;
+  --dark-grey: rgb(61, 52, 52);
 }
 
 * {
-    font-family: Helvetica;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: white;
- 
+  font-family: Helvetica;
+  background-color: white;
+  padding: 20px;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  backdrop-filter: blur(20px);
 }
 
 .header {
-    display: flex;
-        align-items: center;
-        justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-    padding: 0px 100px;
-    height: 75px;
-
+  padding: 0px 100px;
+  height: 75px;
 }
 
 .header__logo {
-    aspect-ratio: 2/1.3;
-    width: 75px;
+  aspect-ratio: 2/1.3;
+  width: 75px;
 }
 
 .nav__wrapper {
-   
 }
 
 .header__nav__buttons {
-    display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 
-    /*missing clamp */
-    width: 600px;
-
+  /*missing clamp */
+  width: 600px;
 }
 
 .nav__item {
-    font-size: 0.8em;
-    list-style: none;
+  font-size: 0.8em;
+  list-style: none;
+}
+
+/* THE herro thing */
+
+.first-hero {
+  display: flex;
+  place-content: center;
+  height: 100vh;
+}
+
+.fist-hero__wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  width: 80vw;
+
+}
+
+.hero__caption {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-between;
+  height: 40%;
+}
+
+.hero__caption h1 {
+  font-size: 2.4em;
+  color: grey;
+  font-weight: 100;
+  font-family: Helvetica;
+}
+
+.hero__caption h1 span {
+
+  font-size: 0.7em;
+  font-weight: 900;
+  display: block;
+  color: var(--dark-grey);
+}
+
+
+
+.vertical-text {
+  
+  writing-mode: vertical-lr;
+}
+
+.btn-row {
+  width: 30px;
+  margin: 0px 15px;
+}
+
+.step-gallery {
+  
+  display: flex;
+    justify-content: space-between;
+  width: 130px;
+}
+
+.image-banner {
+  padding: 3px 5px 10px 10px;
+  background-color: white;
+  font-size: 0.6em;
+  top: 665px;
+  position: absolute;
+}
+
+.image-banner p img {
+  margin-left: 5px;
+  transform: translate(0px, 8px);
 }
