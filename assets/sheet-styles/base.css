@@ -1,3 +1,7 @@
+/* O main tem de tem o column gap , ao inves de usar margin-top em todos os seus childs
+*/
+
+
 @font-face {
   font-family: Helvetica;
   src: url("../fonts/Helvetica-Font/helvetica-light-587ebe5a59211.ttf");
@@ -19,6 +23,7 @@
 :root {
   --grey: rgb(128, 128, 128);
   --dark-grey: rgb(61, 52, 52);
+  --ligth-grey: rgb(192, 192, 192);
 }
 
 * {
@@ -149,7 +154,8 @@ header {
 main {
   margin-top: 50px;
   display: flex;
-    justify-content: center;
+  flex-direction: column;
+    align-items: center;
 }
 
 .About-section {
@@ -208,4 +214,49 @@ main {
 
 .read-more-button p img {
   transform: translate(0px, 8px);
+}
+
+.focus-section {
+  margin-top: 100px;
+  display: flex;
+    flex-direction: column;
+  
+  width: 80vw;
+  height: 250px;
+}
+
+.focus-section__title {
+  font-size: 2.5em;
+  font-family: Helvetica;
+  font-weight: 300;
+  color: var(--grey);
+  
+}
+
+.mission-statements-wrapper  {
+  display: grid;
+  column-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mission-statements-wrapper div {
+  display: flex;
+    align-items: center;
+  column-gap: 10px;
+
+}
+
+.mission-statements-wrapper div.div1 p {
+  width: 200px;
+}
+
+.mission-statements-wrapper div.div2 p {
+  margin-left: 20px;
+  width: 300px;
+}
+
+.mission-statements-wrapper div p.number {
+  font-size: 10em;
+  width: auto;
+  color: var(--ligth-grey);
 }
